@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franchise Partner Onboarding Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4caf50;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    input, textarea, select {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background-color: #4caf50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+      align-self: center;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Franchise Partner Onboarding Questionnaire</h1>
+    <form action="https://script.google.com/macros/s/AKfycbykt5A9MjNXJcPnQ76P_Jdv69m2psmc_kGs-sJMHJLJtNX7HPLaz4SY7nlrrubK6v9CUw/exec" method="POST">
+      <!-- Personal Contact Information -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="nationality">Nationality:</label>
+      <input type="text" id="nationality" name="nationality" required>
+
+      <label for="address">Complete Physical Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="phone">Telephone No.:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="mobile">Mobile No.:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="promo-code">Offer Promo Code (If Any):</label>
+      <input type="text" id="promo-code" name="promo-code">
+
+      <!-- Education and Experience -->
+      <h3>Education and Experience</h3>
+      <label for="qualification">Educational Qualification:</label>
+      <input type="text" id="qualification" name="qualification" required>
+
+      <label for="experience">Professional Work Experience (No. of Years and Industry):</label>
+      <textarea id="experience" name="experience" rows="3"></textarea>
+
+      <label for="skills">Computer Skills (Optional):</label>
+      <input type="text" id="skills" name="skills">
+
+      <!-- Company Information -->
+      <h3>Company Information (If Applicable)</h3>
+      <label for="company-name">Name of the Company:</label>
+      <input type="text" id="company-name" name="company-name">
+
+      <label for="incorporation-date">Date of Incorporation:</label>
+      <input type="date" id="incorporation-date" name="incorporation-date">
+
+      <label for="designation">Your Designation:</label>
+      <input type="text" id="designation" name="designation">
+
+      <label for="company-address">Physical Address of the Company:</label>
+      <textarea id="company-address" name="company-address" rows="3"></textarea>
+
+      <label for="employees">Total Number of Employees:</label>
+      <input type="number" id="employees" name="employees">
+
+      <label for="ceo">Name of CEO:</label>
+      <input type="text" id="ceo" name="ceo">
+
+      <label for="activities">Main Businesses/Activities:</label>
+      <textarea id="activities" name="activities" rows="3"></textarea>
+
+      <!-- Involvement -->
+      <h3>Involvement</h3>
+      <label for="motivation">What motivated you in the education business?</label>
+      <textarea id="motivation" name="motivation" rows="3" required></textarea>
+
+      <!-- Business Evaluation -->
+      <h3>Business Evaluation</h3>
+      <label for="experience-education">Do you have any past experience of running an education business?</label>
+      <textarea id="experience-education" name="experience-education" rows="3"></textarea>
+
+      <label for="manpower">Do you have additional manpower (Graduate - around one)?</label>
+      <input type="text" id="manpower" name="manpower">
+
+      <label for="premises">Do you have 100 Sq meters premises to operate from?</label>
+      <input type="text" id="premises" name="premises">
+
+      <label for="investment">Investment available for Orion Venture in USD:</label>
+      <input type="number" id="investment" name="investment" required>
+
+      <!-- General -->
+      <h3>General</h3>
+      <label for="source">How did you come to know about Orion?</label>
+      <textarea id="source" name="source" rows="3"></textarea>
+
+      <label for="experience">Your experience with Orion to date (Good/Satisfactory/Bad):</label>
+      <select id="experience" name="experience">
+        <option value="Good">Good</option>
+        <option value="Satisfactory">Satisfactory</option>
+        <option value="Bad">Bad</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
